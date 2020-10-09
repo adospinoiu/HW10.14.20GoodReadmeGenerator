@@ -1,0 +1,23 @@
+{
+  "name": "hw10.14.20goodreadmegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adospinoiu/HW10.14.20GoodReadmeGenerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adospinoiu/HW10.14.20GoodReadmeGenerator/issues"
+  },
+  "homepage": "https://github.com/adospinoiu/HW10.14.20GoodReadmeGenerator#readme"
+}
