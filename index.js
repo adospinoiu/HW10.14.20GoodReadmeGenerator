@@ -5,6 +5,7 @@ const inquirer = require("inquirer");
 
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
+const readFileAsync = util.promisify(fs.readFile);
 
 // Ask the user to enter information in the respective sections
 inquirer
@@ -30,6 +31,17 @@ inquirer
             name: "usage"
         },
         {
+            type: "checkbox",
+            message: "Assign a License for the Application:",
+            name: "license",
+            choices: [
+              "Apache_License", 
+              "GNU_License", 
+              "ISC_License", 
+              "MIT_License"
+            ]
+        },
+        {
             type: "input",
             message: "Contribution Guidelines for Application:?",
             name: "contributions"
@@ -38,47 +50,76 @@ inquirer
             type: "input",
             message: "Test Instructions for Application:",
             name: "testing"
+        },
+        {
+            type: "input",
+            message: "Questions about the Application (GitHub username):",
+            name: "questions"
+        },
+        {
+            type: "input",
+            message: "Additional contact options: (Email address):",
+            name: "email"
         }
     ])
-    .then(function (answers) {
+    .then(async function (answers) {
         console.log(answers);
 
+
+        const license = await readFileAsync(`./${answers.license}.txt`, 'utf8');
+
         const text = 
-        `
-        [TITLE]: ${answers.title}
+`
+[TITLE]: ${answers.title}
         
-        [DESCRIPTION]: ${answers.description}
+[DESCRIPTION]: ${answers.description}
 
-        ## TABLE OF CONTENTS
+## TABLE OF CONTENTS
         
-        * [INSTALLATION](#INSTALLATION)
-        * [USAGE_RESTRICTION](#USAGE_RESTRICTIONS)
-        * [CONTRIBUTION](#CONTRIBUTION)
-        * [TEST_INSTRUCTIONS](#TEST_INSTRUCTIONS)
+* [INSTALLATION](#INSTALLATION)
+* [USAGE_RESTRICTION](#USAGE_RESTRICTIONS)
+* [CONTRIBUTION](#CONTRIBUTION)
+* [TEST_INSTRUCTIONS](#TEST_INSTRUCTIONS)
+* [QUESTIONS](#QUESTIONS)
+* [LICENSE](#LICENSE)
 
         
-        ## INSTALLATION: 
+## INSTALLATION: 
         
-        ${answers.instructions}
+${answers.instructions}
 
 
 
-        ## USAGE_RESTRICTIONS: 
+## USAGE_RESTRICTIONS: 
         
-        ${answers.restrictions}
+${answers.usage}
 
 
 
-        ## CONTRIBUTION: 
+## CONTRIBUTION: 
         
-        ${answers.contributions}
+${answers.contributions}
 
 
 
-        ##TEST_INSTRUCTIONS: 
+## TEST_INSTRUCTIONS: 
         
-        ${answers.testing}
-        `
+${answers.testing}
+
+
+
+## QUESTIONS:
+
+For questions about the application contact us at:
+https://github.com/${answers.questions}
+${answers.email}
+
+
+
+## LICENSE:
+
+${license}
+`
 
         return writeFileAsync("README.md", text, "utf8");
     })
