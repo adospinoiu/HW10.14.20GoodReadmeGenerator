@@ -1,7 +1,7 @@
 
-        [TITLE]: ReadMe Generator
+        [TITLE]: README Generator
         
-        [DESCRIPTION]: Helps developers quickly develop README file
+        [DESCRIPTION]: This application used for quickly generating README files
 
         ## TABLE OF CONTENTS
         
@@ -19,17 +19,17 @@
 
         ## RESTRICTIONS: 
         
-        Open source to everyone
+        Open source for all to use
 
 
 
         ## CONTRIBUTION: 
         
-        Have at it. Change what you wish.
+        Please email us any code changes that improve the application
 
 
 
         ##TEST_INSTRUCTIONS: 
         
-        Let me know if it breaks.
+        Correctly install the application
         

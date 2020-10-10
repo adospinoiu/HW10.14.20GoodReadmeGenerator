@@ -27,7 +27,7 @@ inquirer
         {
             type: "input",
             message: "Usage Restrictions for the Application:",
-            name: "restrictions"
+            name: "usage"
         },
         {
             type: "input",
@@ -52,7 +52,7 @@ inquirer
         ## TABLE OF CONTENTS
         
         * [INSTALLATION](#INSTALLATION)
-        * [RESTRICTION](#RESTRICTIONS)
+        * [USAGE_RESTRICTION](#USAGE_RESTRICTIONS)
         * [CONTRIBUTION](#CONTRIBUTION)
         * [TEST_INSTRUCTIONS](#TEST_INSTRUCTIONS)
 
@@ -63,7 +63,7 @@ inquirer
 
 
 
-        ## RESTRICTIONS: 
+        ## USAGE_RESTRICTIONS: 
         
         ${answers.restrictions}
 
