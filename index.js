@@ -74,6 +74,8 @@ inquirer
         
 [DESCRIPTION]: ${answers.description}
 
+[VIDEO: HOW TO USE]: https://drive.google.com/file/d/1K3EGukBc3IETZES3EnXn05goL6YIuZRz/view
+
 ## TABLE OF CONTENTS
         
 * [INSTALLATION](#INSTALLATION)

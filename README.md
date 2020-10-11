@@ -1,31 +1,53 @@
 
-[TITLE]: Excellent README Generator
+[TITLE]: Developers README Generator
         
-[DESCRIPTION]: Help developers with documentation
+[DESCRIPTION]: This application will generate a README File
 
 ## TABLE OF CONTENTS
         
 * [INSTALLATION](#INSTALLATION)
 * [USAGE_RESTRICTION](#USAGE_RESTRICTIONS)
-* [LICENSE](#LICENSE)
 * [CONTRIBUTION](#CONTRIBUTION)
 * [TEST_INSTRUCTIONS](#TEST_INSTRUCTIONS)
 * [QUESTIONS](#QUESTIONS)
+* [LICENSE](#LICENSE)
 
         
 ## INSTALLATION: 
         
-Basic skill level
+Basic skillset required
 
 
 
 ## USAGE_RESTRICTIONS: 
         
-Free for all to use
+Open to use for all
 
 
 
-## LICENSE
+## CONTRIBUTION: 
+        
+Send us any updates that improve the project
+
+
+
+## TEST_INSTRUCTIONS: 
+        
+Attempt to break our application
+
+
+
+## QUESTIONS:
+
+For questions about the application contact us at:
+https://github.com/adospinoiu
+alex.dospinoiu@gmail.com
+
+
+
+## LICENSE:
+
+<img alt="DUB" src="https://img.shields.io/dub/l/readme%20generator">
 
 MIT License
 
@@ -48,23 +70,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
-## CONTRIBUTION: 
-        
-Send us all improvments
-
-
-
-## TEST_INSTRUCTIONS: 
-        
-Run the tests to break it
-
-
-
-## QUESTIONS:
-
-For questions about the application contact us at:
-https://github.com/adospinoiu
-alex.dospinoiu@gmail.com
