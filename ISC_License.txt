@@ -1,3 +1,5 @@
+![Badge](https://img.shields.io/badge/License-ISC-blue)
+
 ISC License
 
 Copyright (c) [2020], [Alex Dospinoiu]
